@@ -11,16 +11,53 @@ You will need [Leiningen][1] 1.7.0 or above installed.
 
 ## Directory Structure
 
-The following files under, `src/hello_web/` are important:
+Here is a listing of the important files and directories.
 
-* `handler.clj`: This file wires the web application together.
-* `routes/`: Routes map URL's received by the web application to functions that should be invoked to serve the request.  Put your routes in this folder.  See `routes/home.clj` for an example.
-* `views/`: HTML templates written in Hiccup live in this folder.  See `views/layout.clj` as an example.
+```
+$ tree
+.
+├── project.clj
+├── resources
+│   └── public
+│       └── css
+│           └── screen.css
+├── src
+│   └── hello_web
+│       ├── handler.clj
+│       ├── repl.clj
+│       ├── routes
+│       │   └── home.clj
+│       └── views
+│           └── layout.clj
+└── test
+    └── hello_web
+        └── test
+            └── handler.clj
+```
+
+<table>
+<tr>
+  <th>File / Directory</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>`resources/public/`</td>
+  <td>Static resources (HTML, CSS, and JavaScript) go here.</td>
+</tr>
+<tr>
+  <td>`src/hello_web/handler.clj`</td>
+  <td>This file wires the web application together.</td>
+</tr>
+<tr>
+  <td>`src/hello_web/routes/`</td>
+  <td>Routes map URL's received by the web application to functions that should be invoked to serve the request.  Put your routes in this folder.  See `routes/home.clj` for an example.</td>
+</tr>
+<tr>
+  <td>`src/hello_web/views/`</td>
+  <td>HTML templates written in Hiccup live in this folder.  See `views/layout.clj` as an example.</td>
+</tr>
+</table>
  
-* The tests are in the `test/` folder.
-
-* Static resources (HTML, CSS, and JavaScript) go under, `resources/public/`.
-
 
 ## Running
 
