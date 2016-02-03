@@ -5,7 +5,9 @@
                  [compojure "1.4.0"]
                  [hiccup "1.0.5"]
                  [ring-server "0.4.0"]]
-  :plugins [[lein-ring "0.9.7"]]
+  :plugins [[lein-ring "0.9.7"]
+            [speclj "3.3.1"]]
+  :test-paths ["spec" "test"]
   :ring {:handler hello-web.handler/app
          :init hello-web.handler/init
          :destroy hello-web.handler/destroy}
