@@ -15,4 +15,4 @@
    {:ring
     {:open-browser? false, :stacktraces? false, :auto-reload? false}}
    :dev
-   {:dependencies [[ring-mock "0.1.5"] [ring/ring-devel "1.4.0"]]}})
+   {:dependencies [[ring-mock "0.1.5"] [ring/ring-devel "1.4.0"] [speclj "3.3.1"]]}})
